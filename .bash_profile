@@ -29,6 +29,7 @@ alias clone='git clone'
 alias master='git checkout master'
 alias gpom='git pull origin master'
 alias be='bundle exec'
+alias psy='./psysh'
 
 alias today='open http://today.turing.io'
 
@@ -82,7 +83,7 @@ function md { mkdir $1; cd $1; }
     if [[ ! -z "$git_branch" ]]; then ps1="${ps1} $(prompt_segment " $git_branch " 32)"; fi
 
     # next line
-    ps1="${ps1}\n🧀  " #=>this is where the pizza is
+    ps1="${ps1}\n🌞  " #=>this is where the pizza is
 
     # output
     PS1="$ps1"
@@ -94,3 +95,6 @@ function md { mkdir $1; cd $1; }
 # The orginal version is saved in .bash_profile.pysave
 PATH="/Library/Frameworks/Python.framework/Versions/3.5/bin:${PATH}"
 export PATH
+
+# Homebrew PHP CLI
+export PATH="$(brew --prefix homebrew/php/php56)/bin:$PATH"
