@@ -80,6 +80,16 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+# -------------------------------------------------------------------
+# Git alias'
+# -------------------------------------------------------------------
+alias ls='ls -GFh'
+
+alias home='cd ~'
+alias bash='atom ~/dotfiles/.bash_profile'
+alias zsh='mvim ~/dotfiles/.zshrc'
+alias ga='git add'
+alias gs='git status'
+alias gc='git commit -m'
+alias gpom='git pull origin master'
+alias be='bundle exec'
