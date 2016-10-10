@@ -2,8 +2,7 @@ syntax enable
 set backspace=indent,eol,start                                     "Make backspace behave like any other editor
 let mapleader = ','                                                "The default leader is \, but a comma is much better.
 set number                                                         "Activates line numbers"
-
-
+set noswapfile
 
 
 
