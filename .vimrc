@@ -1,8 +1,13 @@
+set nocompatible              " be iMproved, required
+
+so ~/.vim/plugins.vim
+
 syntax enable
 set backspace=indent,eol,start                                          "Make backspace behave like every other editor.
 let mapleader = ',' 						    	                    "The default is \, but a comma is much better.
 set number								                                "Let's activate line numbers.
 set noswapfile
+let NERDTreeShowHidden=1
 
 
 
@@ -48,7 +53,8 @@ nmap <C-L> <C-W><C-L>
 
 
 
-
+"----make nerdtree easier to toggle-"
+nmap <D-1> :NERDTreeToggle<cr>
 "-------------Mappings--------------"
 
 "Make it easy to edit the Vimrc file.
