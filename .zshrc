@@ -98,3 +98,4 @@ alias be='bundle exec'
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 source $ZSH/oh-my-zsh.sh
+export PATH="/usr/local/sbin:$PATH"

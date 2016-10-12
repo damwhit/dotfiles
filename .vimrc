@@ -16,14 +16,14 @@ colorscheme desert
 
 set t_CO=256								                            "Use 256 colors. This is useful for Terminal Vim.
 set linespace=10   						                                "Macvim-specific line-height.
-set tabstop=4                                                           " The width of a TAB is set to 4.
+set tabstop=2                                                           " The width of a TAB is set to 4.
                                                                         " Still it is a \t. It is just that
                                                                         " Vim will interpret it to be having
                                                                         " a width of 4.
 
-set shiftwidth=4                                                        " Indents will have a width of 4
+set shiftwidth=2                                                        " Indents will have a width of 4
 
-set softtabstop=4                                                       " Sets the number of columns for a TAB
+set softtabstop=2                                                       " Sets the number of columns for a TAB
 
 set expandtab                                                           " Expand TABs to spaces
 set guioptions-=l                                                       "Disable Gui scrollbars.
@@ -62,9 +62,16 @@ nmap <Leader>ev :tabedit $MYVIMRC<cr>
 
 "Add simple highlight removal.
 nmap <Leader><space> :nohlsearch<cr>
+nmap <C-T> :CtrlP<cr>
+nmap <c-R> :CtrlPBufTag<cr>
+nmap <D-e> :CtrlPMRUFiles<cr>
 
-
-
+"-------------Plugins--------------"
+"/
+"/ CtrlP
+"/
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+let g:ctrlp_match_window = 'top,order:ttb,min:1,max:30,results:30'
 
 "-------------Auto-Commands--------------"
 
