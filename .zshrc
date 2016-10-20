@@ -100,3 +100,4 @@ export PATH="/usr/local/sbin:$PATH"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+export PATH="$HOME/.composer/vendor/bin:$PATH"
