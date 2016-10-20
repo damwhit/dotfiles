@@ -1,1 +1,0 @@
-/Users/davidwhitaker/dotfiles/.emacs.d

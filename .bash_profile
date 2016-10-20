@@ -1,7 +1,5 @@
 [[ -s "$HOME/.profile" ]] && source "$HOME/.profile" # Load the default .profile
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-
 export NVM_DIR=~/.nvm
 . $(brew --prefix nvm)/nvm.sh
 
@@ -98,3 +96,6 @@ export PATH
 
 # Homebrew PHP CLI
 export PATH="$(brew --prefix homebrew/php/php56)/bin:$PATH"
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
