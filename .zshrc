@@ -51,7 +51,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git, zsh-nvm)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -87,7 +87,7 @@ alias ls='ls -GFh'
 
 alias home='cd ~'
 alias bash='atom ~/dotfiles/.bash_profile'
-alias zsh='mvim ~/dotfiles/.zshrc'
+alias zsh='atom ~/dotfiles/.zshrc'
 alias ga='git add'
 alias gs='git status'
 alias gc='git commit -m'

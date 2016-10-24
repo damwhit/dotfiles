@@ -1,8 +1,5 @@
 [[ -s "$HOME/.profile" ]] && source "$HOME/.profile" # Load the default .profile
 
-export NVM_DIR=~/.nvm
-. $(brew --prefix nvm)/nvm.sh
-
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
 
 
