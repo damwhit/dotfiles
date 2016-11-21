@@ -7,7 +7,7 @@ export ZSH=/Users/davidwhitaker/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="cloud"
+ZSH_THEME="miloshadzic"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -93,6 +93,7 @@ alias gs='git status'
 alias gc='git commit -m'
 alias gpom='git pull origin master'
 alias be='bundle exec'
+alias pol='cd ~/points_of_light'
 #
 
 source $ZSH/oh-my-zsh.sh
