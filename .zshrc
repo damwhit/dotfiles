@@ -94,6 +94,7 @@ alias gc='git commit -m'
 alias gpom='git pull origin master'
 alias be='bundle exec'
 alias pol='cd ~/points_of_light'
+alias pa='php artisan'
 #
 
 source $ZSH/oh-my-zsh.sh
