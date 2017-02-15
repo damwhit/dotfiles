@@ -38,7 +38,8 @@ hi vertsplit guifg=bg guibg=bg
 set hlsearch								"Highlight all matched terms.
 set incsearch								"Incrementally highlight, as we type.
 
-
+set wildignore+=*/tmp,*/.git,*.swp,*/node_modules,*/bower_components     " MacOSX/Linux
+let g:ctrlp_custom_ignore = 'node_modules\|bower_components\|tmp\|git'
 
 
 "-------------Split Management--------------"
@@ -102,7 +103,7 @@ let g:grep_cmd_opts = '--line-numbers --noheading'
 "/
 "/ vim-php-cs-fixer.vim
 "/
-let g:php_cs_fixer_level = "psr2"  
+let g:php_cs_fixer_level = "psr2"
 
 nnoremap <silent><leader>pf :call PhpCsFixerFixFile()<CR>
 
