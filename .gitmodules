@@ -1,0 +1,8 @@
+[submodule "greplace.vim"]
+  path = .vim/bundle/greplace.vim
+  url = git://github.com/skwp/greplace.git
+	ignore = untracked
+[submodule "vim-wakatime"]
+  path = .vim/bundle/vim-wakatime
+  url = git://github.com/wakatime/vim-wakatime.git
+	ignore = untracked

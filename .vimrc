@@ -18,7 +18,7 @@ set shiftwidth=4
 
 
 "-------------Visuals--------------"
-colorscheme jellybeans
+colorscheme blue
 set t_CO=256								"Use 256 colors. This is useful for Terminal Vim.
 
 set lines=999
@@ -113,16 +113,6 @@ nnoremap <silent><leader>pf :call PhpCsFixerFixFile()<CR>
 let g:pdv_template_dir = $HOME ."/.vim/bundle/pdv/templates_snip"
 
 nnoremap <leader>d :call pdv#DocumentWithSnip()<CR>
-
-"/
-"/ Ultisnips
-"/
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<tab>"
-let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
-
-
-
 
 "-------------Laravel-Specific--------------"
 nmap <Leader>lr :e app/Http/routes.php<cr>
