@@ -13,7 +13,8 @@ set tabstop=2
 set expandtab
 set softtabstop=2
 set shiftwidth=4
-
+set backupdir=./.backup,.,/tmp
+set directory=.,./.backup,/tmp
 
 
 
@@ -114,6 +115,7 @@ let g:pdv_template_dir = $HOME ."/.vim/bundle/pdv/templates_snip"
 
 nnoremap <leader>d :call pdv#DocumentWithSnip()<CR>
 
+let g:mustache_abbreviations = 1
 "-------------Laravel-Specific--------------"
 nmap <Leader>lr :e app/Http/routes.php<cr>
 nmap <Leader>lm :!php artisan make:
