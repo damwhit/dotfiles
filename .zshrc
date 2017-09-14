@@ -7,7 +7,7 @@ export ZSH=/Users/davidwhitaker/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="aussiegeek"
+ZSH_THEME="simple"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -51,7 +51,7 @@ ZSH_THEME="aussiegeek"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git, zsh-nvm, zsh-wakatime)
+plugins=(git zsh-wakatime)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -73,38 +73,32 @@ source $ZSH/oh-my-zsh.sh
 # export ARCHFLAGS="-arch x86_64"
 
 # ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
+# export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-# -------------------------------------------------------------------
-# Git alias'
-# -------------------------------------------------------------------
-alias ls='ls -GFh'
-
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
 alias home='cd ~'
 alias bash='atom ~/dotfiles/.bash_profile'
 alias zsh='atom ~/dotfiles/.zshrc'
-alias ga='git add'
-alias gs='git status'
-alias gc='git commit -m'
-alias gpom='git pull origin master'
-alias be='bundle exec'
 alias pol='cd ~/points_of_light'
 alias pa='php artisan'
-#
+alias disney-ssh='ssh -i ~/.ssh/disneytickets.pem disney'
+alias afg-ssh='ssh -i ~/.ssh/afg2.pem afg'
 
-source $ZSH/oh-my-zsh.sh
+# eb cli
+export PATH=~/Library/Python/2.7/bin:$PATH
+
+# ruby
+export PATH="$HOME/.rbenv/shims:$PATH"
+
+# everything else
+export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-export PATH="$HOME/.composer/vendor/bin:$PATH"
 
-# Setting PATH for Python 3.5
-# The orginal version is saved in .bash_profile.pysave
-PATH="/Library/Frameworks/Python.framework/Versions/3.5/bin:${PATH}"
-export PATH
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
