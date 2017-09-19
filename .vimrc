@@ -9,15 +9,12 @@ set nocompatible              " be iMproved, required
 set number
 filetype off                  " required
 syntax on
-map <C-\> :NERDTreeToggle<CR>
-let NERDTreeShowHidden=1
+:set hlsearch
 
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif
 map <C-f> :Ack<space>
-map <C-t> :FZF<CR>
-
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -43,13 +40,21 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Plugin 'ascenator/L9', {'name': 'newL9'}
 Plugin 'wakatime/vim-wakatime'
 Plugin 'scrooloose/nerdtree'
+map <C-\> :NERDTreeToggle<CR>
+let NERDTreeShowHidden=1
 Plugin 'tomtom/tcomment_vim'
 Plugin 'pangloss/vim-javascript'
+let g:javascript_plugin_flow = 1
 Plugin 'mxw/vim-jsx'
+let g:jsx_ext_required = 0
 Plugin 'leshill/vim-json'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
+map <C-t> :FZF<CR>
 Plugin 'editorconfig/editorconfig-vim'
+Plugin 'othree/html5.vim'
+Plugin 'mustache/vim-mustache-handlebars'
+let g:mustache_abbreviations=1
 
 " All of your Plugins must be added before the following line
 
