@@ -1,3 +1,22 @@
+call plug#begin('~/.vim/plugged')
+Plug 'junegunn/vim-easy-align'
+Plug 'https://github.com/junegunn/vim-github-dashboard.git'
+Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'wakatime/vim-wakatime'
+Plug 'scrooloose/nerdtree'
+Plug 'tomtom/tcomment_vim'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+Plug 'leshill/vim-json'
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'othree/html5.vim'
+Plug 'mustache/vim-mustache-handlebars'
+call plug#end()
+
 filetype plugin indent on
 " show existing tab with 2 spaces width
 set tabstop=2
@@ -15,66 +34,8 @@ if executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif
 map <C-f> :Ack<space>
-
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
-
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-
-" The following are examples of different formats supported.
-" Keep Plugin commands between vundle#begin/end.
-" plugin on GitHub repo
-Plugin 'tpope/vim-fugitive'
-" plugin from http://vim-scripts.org/vim/scripts.html
-" Plugin 'L9'
-" git repos on your local machine (i.e. when working on your own plugin)
-" The sparkup vim script is in a subdirectory of this repo called vim.
-" Pass the path to set the runtimepath properly.
-Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-" Install L9 and avoid a Naming conflict if you've already installed a
-" different version somewhere else.
-" Plugin 'ascenator/L9', {'name': 'newL9'}
-Plugin 'wakatime/vim-wakatime'
-Plugin 'scrooloose/nerdtree'
+map <C-t> :FZF<CR>
+let g:javascript_plugin_flow = 1
+let g:jsx_ext_required = 0
 map <C-\> :NERDTreeToggle<CR>
 let NERDTreeShowHidden=1
-Plugin 'tomtom/tcomment_vim'
-Plugin 'pangloss/vim-javascript'
-let g:javascript_plugin_flow = 1
-Plugin 'mxw/vim-jsx'
-let g:jsx_ext_required = 0
-Plugin 'leshill/vim-json'
-Plugin 'junegunn/fzf'
-Plugin 'junegunn/fzf.vim'
-map <C-t> :FZF<CR>
-Plugin 'editorconfig/editorconfig-vim'
-Plugin 'othree/html5.vim'
-Plugin 'mustache/vim-mustache-handlebars'
-let g:mustache_abbreviations=1
-
-" All of your Plugins must be added before the following line
-
-
-
-
-
-
-
-:" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-"
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
