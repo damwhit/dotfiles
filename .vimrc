@@ -32,7 +32,7 @@ filetype off                  " required
 syntax on
 :set hlsearch
 set noeb vb t_vb=
-
+set backspace=indent,eol,start
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif

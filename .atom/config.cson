@@ -7,14 +7,12 @@
     ]
   core:
     disabledPackages: [
-      "linter-sass-lint"
       "atom-beautify"
-      "vim-mode-plus"
     ]
     telemetryConsent: "limited"
     themes: [
-      "one-dark-ui"
-      "dracula-syntax"
+      "one-light-ui"
+      "fizzy"
     ]
   editor:
     showIndentGuide: true
