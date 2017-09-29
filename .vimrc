@@ -1,5 +1,4 @@
 call plug#begin('~/.vim/plugged')
-Plug 'junegunn/vim-easy-align'
 Plug 'https://github.com/junegunn/vim-github-dashboard.git'
 Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
@@ -17,6 +16,7 @@ Plug 'othree/html5.vim'
 Plug 'mustache/vim-mustache-handlebars'
 Plug 'w0rp/ale'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'mileszs/ack.vim'
 call plug#end()
 
 filetype plugin indent on
@@ -53,3 +53,6 @@ nnoremap <silent> <C-h> :TmuxNavigateLeft<cr>
 nnoremap <silent> <C-j> :TmuxNavigateDown<cr>
 nnoremap <silent> <C-k> :TmuxNavigateUp<cr>
 nnoremap <silent> <C-l> :TmuxNavigateRight<cr>
+set backup
+set backupdir=/private/tmp
+set dir=/private/tmp

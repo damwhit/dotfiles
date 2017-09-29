@@ -8,12 +8,9 @@
   core:
     disabledPackages: [
       "atom-beautify"
+      "vim-mode-plus"
     ]
     telemetryConsent: "limited"
-    themes: [
-      "one-light-ui"
-      "fizzy"
-    ]
   editor:
     showIndentGuide: true
     softWrap: true
