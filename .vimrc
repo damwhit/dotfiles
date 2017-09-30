@@ -12,7 +12,6 @@ Plug 'leshill/vim-json'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'editorconfig/editorconfig-vim'
-Plug 'othree/html5.vim'
 Plug 'mustache/vim-mustache-handlebars'
 Plug 'w0rp/ale'
 Plug 'christoomey/vim-tmux-navigator'
@@ -56,3 +55,7 @@ nnoremap <silent> <C-l> :TmuxNavigateRight<cr>
 set backup
 set backupdir=/private/tmp
 set dir=/private/tmp
+
+let g:ale_linters = {
+\   'html': [],
+\}
