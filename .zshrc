@@ -7,7 +7,7 @@ export ZSH=/Users/davidwhitaker/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="simple"
+ZSH_THEME="random"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -94,6 +94,12 @@ alias afg-ssh='ssh -i ~/.ssh/afg2.pem afg'
 # eb cli
 export PATH=~/Library/Python/2.7/bin:$PATH
 
+# Move next only if `homebrew` is installed this is for z
+if command -v brew >/dev/null 2>&1; then
+	# Load rupa's z if installed
+	[ -f $(brew --prefix)/etc/profile.d/z.sh ] && source $(brew --prefix)/etc/profile.d/z.sh
+fi
+
 # ruby
 export PATH="$HOME/.rbenv/shims:$PATH"
 
@@ -104,3 +110,4 @@ export PATH="/usr/local/sbin:$PATH"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
 
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
