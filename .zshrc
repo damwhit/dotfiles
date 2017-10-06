@@ -7,7 +7,8 @@ export ZSH=/Users/davidwhitaker/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="cobalt2"
+ZSH_THEME="agnoster"
+DEFAULT_USER=`whoami`
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -108,6 +109,6 @@ export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-# export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
 
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+eval "$(rbenv init -)"

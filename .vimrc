@@ -1,21 +1,17 @@
 call plug#begin('~/.vim/plugged')
-Plug 'https://github.com/junegunn/vim-github-dashboard.git'
 Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'wakatime/vim-wakatime'
-Plug 'scrooloose/nerdtree'
-Plug 'tomtom/tcomment_vim'
-Plug 'pangloss/vim-javascript'
-Plug 'mxw/vim-jsx'
-Plug 'leshill/vim-json'
-Plug 'junegunn/fzf'
-Plug 'junegunn/fzf.vim'
-Plug 'editorconfig/editorconfig-vim'
-Plug 'mustache/vim-mustache-handlebars'
-Plug 'w0rp/ale'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'junegunn/fzf'
+Plug 'leshill/vim-json'
 Plug 'mileszs/ack.vim'
+Plug 'mustache/vim-mustache-handlebars'
+Plug 'mxw/vim-jsx'
+Plug 'pangloss/vim-javascript'
+Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'tomtom/tcomment_vim'
+Plug 'wakatime/vim-wakatime'
 call plug#end()
 
 filetype plugin indent on
@@ -29,7 +25,8 @@ set nocompatible              " be iMproved, required
 set number
 filetype off                  " required
 syntax on
-:set hlsearch
+set hlsearch
+colorscheme desert
 set noeb vb t_vb=
 set backspace=indent,eol,start
 if executable('ag')
@@ -55,7 +52,3 @@ nnoremap <silent> <C-l> :TmuxNavigateRight<cr>
 set backup
 set backupdir=/private/tmp
 set dir=/private/tmp
-
-let g:ale_linters = {
-\   'html': [],
-\}
