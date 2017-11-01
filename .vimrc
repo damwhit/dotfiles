@@ -10,6 +10,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'scrooloose/nerdtree'
 Plug 'tomtom/tcomment_vim'
 Plug 'wakatime/vim-wakatime'
+Plug 'nanotech/jellybeans.vim', { 'tag': 'v1.6' }
 call plug#end()
 
 filetype plugin indent on
@@ -21,7 +22,7 @@ set nocompatible
 set number
 syntax on
 set hlsearch
-colorscheme desert
+colorscheme jellybeans
 set noeb vb t_vb=
 set backspace=indent,eol,start
 if executable('ag')
@@ -36,3 +37,16 @@ let NERDTreeShowHidden = 1
 set backup
 set backupdir=/private/tmp
 set dir=/private/tmp
+set guifont=Inconsolata\ for\ Powerline:h15
+let g:Powerline_symbols = 'fancy'
+set encoding=utf-8
+set t_Co=256
+set fillchars+=stl:\ ,stlnc:\
+set term=xterm-256color
+set termencoding=utf-8
+if has("gui_running")
+   let s:uname = system("uname")
+   if s:uname == "Darwin\n"
+      set guifont=Inconsolata\ for\ Powerline:h15
+   endif
+endif
