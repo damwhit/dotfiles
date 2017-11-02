@@ -37,7 +37,7 @@ let NERDTreeShowHidden = 1
 set backup
 set backupdir=/private/tmp
 set dir=/private/tmp
-set guifont=Inconsolata\ for\ Powerline:h15
+set guifont=Inconsolata\ for\ Powerline:h16
 let g:Powerline_symbols = 'fancy'
 set encoding=utf-8
 set t_Co=256
