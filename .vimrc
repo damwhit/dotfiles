@@ -11,6 +11,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'tomtom/tcomment_vim'
 Plug 'wakatime/vim-wakatime'
 Plug 'nanotech/jellybeans.vim', { 'tag': 'v1.6' }
+Plug 'terryma/vim-multiple-cursors'
 call plug#end()
 
 filetype plugin indent on
