@@ -10,8 +10,8 @@ Plug 'pangloss/vim-javascript'
 Plug 'scrooloose/nerdtree'
 Plug 'tomtom/tcomment_vim'
 Plug 'wakatime/vim-wakatime'
-Plug 'nanotech/jellybeans.vim', { 'tag': 'v1.6' }
 Plug 'terryma/vim-multiple-cursors'
+Plug 'rafi/awesome-vim-colorschemes'
 call plug#end()
 
 filetype plugin indent on
@@ -23,7 +23,7 @@ set nocompatible
 set number
 syntax on
 set hlsearch
-colorscheme jellybeans
+colorscheme dracula
 set noeb vb t_vb=
 set backspace=indent,eol,start
 if executable('ag')
