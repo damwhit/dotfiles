@@ -85,12 +85,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias home='cd ~'
-alias bash='atom ~/dotfiles/.bash_profile'
 alias zsh='atom ~/dotfiles/.zshrc'
-alias pol='cd ~/points_of_light'
-alias pa='php artisan'
-alias disney-ssh='ssh -i ~/.ssh/disneytickets.pem disney'
-alias afg-ssh='ssh -i ~/.ssh/afg2.pem afg'
+alias code='code-insiders'
 
 # eb cli
 export PATH=~/Library/Python/2.7/bin:$PATH
