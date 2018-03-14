@@ -1,17 +1,11 @@
 call plug#begin('~/.vim/plugged')
-Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
-Plug 'editorconfig/editorconfig-vim'
-Plug 'junegunn/fzf'
-Plug 'leshill/vim-json'
-Plug 'mileszs/ack.vim'
-Plug 'mustache/vim-mustache-handlebars'
-Plug 'mxw/vim-jsx'
-Plug 'pangloss/vim-javascript'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'tomtom/tcomment_vim'
 Plug 'wakatime/vim-wakatime'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'rafi/awesome-vim-colorschemes'
+Plug 'mattn/emmet-vim'
 call plug#end()
 
 filetype plugin indent on
@@ -23,22 +17,22 @@ set nocompatible
 set number
 syntax on
 set hlsearch
-colorscheme dracula
+colorscheme jellybeans
 set noeb vb t_vb=
 set backspace=indent,eol,start
-if executable('ag')
-  let g:ackprg = 'ag --vimgrep'
-endif
-map <C-f> :Ack<space>
-map <C-t> :FZF<CR>
-let g:javascript_plugin_flow = 1
-let g:jsx_ext_required = 0
 map <C-\> :NERDTreeToggle<CR>
+map <C-f> :! grep -R 
 let NERDTreeShowHidden = 1
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+
+" backup directories
 set backup
 set backupdir=/private/tmp
 set dir=/private/tmp
-set guifont=Inconsolata\ for\ Powerline:h16
+
+" fonts
+set guifont=Inconsolata\ for\ Powerline:h15
 let g:Powerline_symbols = 'fancy'
 set encoding=utf-8
 set t_Co=256

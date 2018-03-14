@@ -7,7 +7,7 @@ export ZSH=/Users/davidwhitaker/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="fishy"
+ZSH_THEME="sporty_256"
 DEFAULT_USER=`whoami`
 
 # Uncomment the following line to use case-sensitive completion.
@@ -85,8 +85,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias home='cd ~'
-alias zsh='atom ~/dotfiles/.zshrc'
-alias code='code-insiders'
 alias be='bundle exec'
 
 # eb cli
@@ -105,12 +103,7 @@ export PATH="$HOME/.rbenv/shims:$PATH"
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 eval "$(rbenv init -)"
 export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
