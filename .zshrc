@@ -106,4 +106,5 @@ export PATH="/usr/local/sbin:$PATH"
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 eval "$(rbenv init -)"
 export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
+export PATH=~/.composer/vendor/bin:$PATH
 
