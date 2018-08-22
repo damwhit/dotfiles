@@ -6,6 +6,7 @@ Plug 'wakatime/vim-wakatime'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'mattn/emmet-vim'
+Plug 'leafgarland/typescript-vim'
 call plug#end()
 
 filetype plugin indent on

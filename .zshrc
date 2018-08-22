@@ -108,3 +108,6 @@ eval "$(rbenv init -)"
 export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
 export PATH=~/.composer/vendor/bin:$PATH
 
+
+export NVM_DIR="/Users/davidwhitaker/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
