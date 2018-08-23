@@ -4,7 +4,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'tomtom/tcomment_vim'
 Plug 'wakatime/vim-wakatime'
 Plug 'terryma/vim-multiple-cursors'
-Plug 'rafi/awesome-vim-colorschemes'
+Plug 'flazz/vim-colorschemes'
 Plug 'mattn/emmet-vim'
 Plug 'leafgarland/typescript-vim'
 call plug#end()
@@ -18,14 +18,19 @@ set nocompatible
 set number
 syntax on
 set hlsearch
-colorscheme jellybeans
+colorscheme dracula
 set noeb vb t_vb=
 set backspace=indent,eol,start
 map <C-\> :NERDTreeToggle<CR>
 map <C-f> :! grep -R 
 let NERDTreeShowHidden = 1
+
+" ctrlp
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_working_path_mode = 'a'
+let g:ctrlp_switch_buffer = 'et'
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 
 " backup directories
 set backup
