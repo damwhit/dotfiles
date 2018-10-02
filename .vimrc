@@ -9,6 +9,7 @@ Plug 'mattn/emmet-vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'mileszs/ack.vim'
 Plug 'mattn/webapi-vim'
+Plug 'vim-airline/vim-airline'
 call plug#end()
 
 filetype plugin indent on
@@ -22,7 +23,7 @@ syntax on
 set hlsearch
 set noeb vb t_vb=
 set backspace=indent,eol,start
-
+ 
 " colorschemes
 colorscheme jellybeans
 
@@ -58,7 +59,6 @@ let g:Powerline_symbols = 'fancy'
 set encoding=utf-8
 set t_Co=256
 set fillchars+=stl:\ ,stlnc:\
-set term=xterm-256color
 set termencoding=utf-8
 if has("gui_running")
    let s:uname = system("uname")
