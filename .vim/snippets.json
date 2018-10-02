@@ -1,0 +1,19 @@
+{
+  "javascript": {
+    "filters": "js",
+    "profile": "js",
+    "snippets": {
+      "locus": "eval(require('locus');"
+    }
+  },
+  "jsx": {
+		"extends": "javascript"
+	},
+  "typescript": {
+		"extends": "javascript"
+	},
+  "vue": {
+		"extends": "javascript"
+	}
+}
+

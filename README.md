@@ -21,3 +21,4 @@ ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
 * tree - `brew install tree`
 * silver searcher - `brew install the_silver_searcher`
 * ack - `brew install ack`
+

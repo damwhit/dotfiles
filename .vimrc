@@ -8,6 +8,7 @@ Plug 'flazz/vim-colorschemes'
 Plug 'mattn/emmet-vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'mileszs/ack.vim'
+Plug 'mattn/webapi-vim'
 call plug#end()
 
 filetype plugin indent on
@@ -42,6 +43,10 @@ map <C-f> :Ack!<Space>
 set backup
 set backupdir=/private/tmp
 set dir=/private/tmp
+
+" custom emmet snippets
+let g:user_emmet_leader_key = '<c-w>'
+let g:user_emmet_settings = webapi#json#decode(join(readfile(expand('~/dotfiles/.vim/snippets.json')), "\n"))
 
 " fonts
 set guifont=Inconsolata\ for\ Powerline:h15
