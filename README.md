@@ -19,3 +19,5 @@ ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
 * [z - used for jumping to files more quickly](https://github.com/rupa/z)
 * [trash - moves things to trash from command line](http://hasseg.org/trash/)
 * tree - `brew install tree`
+* silver searcher - `brew install the_silver_searcher`
+* ack - `brew install ack`
