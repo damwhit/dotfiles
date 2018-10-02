@@ -4,7 +4,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'tomtom/tcomment_vim'
 Plug 'wakatime/vim-wakatime'
 Plug 'terryma/vim-multiple-cursors'
-Plug 'flazz/vim-colorschemes'
+Plug 'rafi/awesome-vim-colorschemes'
 Plug 'mattn/emmet-vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'mileszs/ack.vim'
@@ -20,9 +20,13 @@ set nocompatible
 set number
 syntax on
 set hlsearch
-colorscheme dracula
 set noeb vb t_vb=
 set backspace=indent,eol,start
+
+" colorschemes
+colorscheme jellybeans
+
+" nerdtree
 map <C-\> :NERDTreeToggle<CR>
 let NERDTreeShowHidden = 1
 
@@ -62,3 +66,4 @@ if has("gui_running")
       set guifont=Inconsolata\ for\ Powerline:h15
    endif
 endif
+
