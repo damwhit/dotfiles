@@ -3,7 +3,7 @@
     "filters": "js",
     "profile": "js",
     "snippets": {
-      "locus": "eval(require('locus');"
+      "locus": "eval(require('locus'));"
     }
   },
   "jsx": {
