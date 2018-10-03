@@ -26,31 +26,28 @@ class Cohort
   end
 end
 
-cohort_1808 = [
+cohort_1810 = [
   "Adam Niedzwiecki",
-  "Ashley Levi",
-  "Chris Meyer",
-  "Cody Price",
   "David Cisneros",
-  "Libby Yeh",
-  "Eric Fitzsimmons",
-  "Hillary Stewart",
-  "Jake Lauer",
-  "Jamie Rushford",
-  "Justin Torrance",
-  "Kaylee Bunce",
+  "Duy Thanh Vu",
+  "Dylan Hofmann",
+  "Eric Weissman",
+  "Gabriel Inzurriaga",
+  "Heather Hartley",
+  "Jeo D",
+  "Justin Duncan",
+  "Karin Ohman",
   "Kristen Hallstrom",
-  "Kylie Stanley",
-  "Lindsey Wilhite",
-  "Loryn Mason",
   "Mariel Waters",
-  "Matt Franzen",
-  "Mike Duke",
-  "Elly Torres",
-  "Cole Vanacore",
-  "Paul Vangelakos",
-  "Sabrin Nasreddin",
-  "Theo Bean"
+  "Matthew Foxwell",
+  "Niraj Aryal",
+  "Sally Haefling",
+  "Shannon Moranetz",
+  "Tiffany Bachmann",
+  "Tim Miller",
+  "Tom Wilhoit",
+  "Travis Gee",
+  "Whitney Burton"
 ]
 
-s = Cohort.new(cohort_1808)
+s = Cohort.new(cohort_1810)
