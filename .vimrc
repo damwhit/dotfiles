@@ -50,7 +50,7 @@ set backupdir=/private/tmp
 set dir=/private/tmp
 
 " custom emmet snippets
-let g:user_emmet_leader_key = '<c-w>'
+let g:user_emmet_leader_key = '<c-s>'
 let g:user_emmet_settings = webapi#json#decode(join(readfile(expand('~/dotfiles/.vim/snippets.json')), "\n"))
 
 " fonts
