@@ -38,7 +38,6 @@ cohort_1810 = [
   "Justin Duncan",
   "Karin Ohman",
   "Kristen Hallstrom",
-  "Mariel Waters",
   "Matthew Foxwell",
   "Niraj Aryal",
   "Sally Haefling",
