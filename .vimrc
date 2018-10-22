@@ -32,8 +32,8 @@ map <C-\> :NERDTreeToggle<CR>
 let NERDTreeShowHidden = 1
 
 " ctrlp
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_show_hidden = 1
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|node_modules)$'
 
 " ack
 if executable('ag')
@@ -63,4 +63,3 @@ if has("gui_running")
       set guifont=Inconsolata\ for\ Powerline:h15
    endif
 endif
-
