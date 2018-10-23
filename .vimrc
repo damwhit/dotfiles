@@ -33,7 +33,7 @@ let NERDTreeShowHidden = 1
 
 " ctrlp
 let g:ctrlp_show_hidden = 1
-let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|node_modules)$'
+let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
 
 " ack
 if executable('ag')
