@@ -8,11 +8,9 @@ dotfiles
 ```
 ln -s ~/dotfiles/omf ~/.config/omf
 ln -s ~/dotfiles/.gitconfig ~/.gitconfig
-ln -s ~/dotfiles/.atom/* ~/.atom
 ln -s ~/dotfiles/.vimrc ~/.vimrc
 ln -s ~/dotfiles/.vim/* ~/.vim
 ln -s ~/dotfiles/.pryrc ~/.pryrc
-ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
 ```
 
 ### 2. Other things I use
