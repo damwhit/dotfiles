@@ -25,7 +25,8 @@ set noeb vb t_vb=
 set backspace=indent,eol,start
  
 " colorschemes
-colorscheme jellybeans
+set termguicolors " for solarized only
+colorscheme solarized8
 
 " nerdtree
 map <C-\> :NERDTreeToggle<CR>
