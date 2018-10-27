@@ -10,6 +10,7 @@ Plug 'leafgarland/typescript-vim'
 Plug 'mileszs/ack.vim'
 Plug 'mattn/webapi-vim'
 Plug 'vim-airline/vim-airline'
+Plug 'pangloss/vim-javascript'
 call plug#end()
 
 filetype plugin indent on
