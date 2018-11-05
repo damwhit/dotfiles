@@ -11,6 +11,7 @@ Plug 'mileszs/ack.vim'
 Plug 'mattn/webapi-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'pangloss/vim-javascript'
+Plug 'Yggdroot/indentLine'
 call plug#end()
 
 filetype plugin indent on
@@ -62,8 +63,12 @@ set t_Co=256
 set fillchars+=stl:\ ,stlnc:\
 set termencoding=utf-8
 if has("gui_running")
-   let s:uname = system("uname")
-   if s:uname == "Darwin\n"
-      set guifont=Inconsolata\ for\ Powerline:h15
-   endif
+  let s:uname = system("uname")
+  if s:uname == "Darwin\n"
+    set guifont=Inconsolata\ for\ Powerline:h15
+  endif
 endif
+
+" indentLine
+let g:indentLine_fileTypeExclude = ['markdown']
+
