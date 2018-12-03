@@ -11,7 +11,6 @@ Plug 'mileszs/ack.vim'
 Plug 'mattn/webapi-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'pangloss/vim-javascript'
-Plug 'Yggdroot/indentLine'
 call plug#end()
 
 filetype plugin indent on
