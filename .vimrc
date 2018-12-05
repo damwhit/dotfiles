@@ -24,8 +24,6 @@ syntax on
 set hlsearch
 set noeb vb t_vb=
 set backspace=indent,eol,start
-:set textwidth=80
-au BufRead,BufNewFile *.md setlocal textwidth=80 " automatically wrap at 80 characters in md files
  
 " colorschemes
 set termguicolors " for solarized only
@@ -68,7 +66,4 @@ if has("gui_running")
     set guifont=Inconsolata\ for\ Powerline:h15
   endif
 endif
-
-" indentLine
-let g:indentLine_fileTypeExclude = ['markdown']
 
