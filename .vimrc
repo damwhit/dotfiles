@@ -11,6 +11,7 @@ Plug 'mileszs/ack.vim'
 Plug 'mattn/webapi-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
 call plug#end()
 
 filetype plugin indent on
@@ -25,6 +26,9 @@ set hlsearch
 set noeb vb t_vb=
 set backspace=indent,eol,start
  
+" vim-jsx
+let g:jsx_ext_required = 0
+
 " colorschemes
 set termguicolors " for solarized only
 colorscheme solarized8
@@ -32,6 +36,7 @@ colorscheme solarized8
 " nerdtree
 map <C-\> :NERDTreeToggle<CR>
 let NERDTreeShowHidden = 1
+let g:NERDTreeHijackNetrw=0 " this makes it so that nerd tree does not open automatically
 
 " ctrlp
 let g:ctrlp_show_hidden = 1
