@@ -40,7 +40,7 @@ let g:NERDTreeHijackNetrw=0 " this makes it so that nerd tree does not open auto
 
 " ctrlp
 let g:ctrlp_show_hidden = 1
-let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
+let g:ctrlp_custom_ignore = '\v[\/](coverage|node_modules|target|dist)|(\.(swp|ico|git|svn))$'
 let g:ctrlp_use_caching = 0
 
 " ack
