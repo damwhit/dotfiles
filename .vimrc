@@ -12,6 +12,7 @@ Plug 'mattn/webapi-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
+Plug 'peitalin/vim-jsx-typescript'
 call plug#end()
 
 filetype plugin indent on
