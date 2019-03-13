@@ -13,7 +13,7 @@ ln -s ~/dotfiles/.vim ~/.vim
 ln -s ~/dotfiles/.pryrc ~/.pryrc
 ```
 
-### 3. fish shell installation
+### 2. fish shell installation
 Download fish shell
 
 ```sh
@@ -34,11 +34,11 @@ chsh -s /usr/local/bin/fish
 
 Install omf [oh my fish](https://github.com/oh-my-fish/oh-my-fish)
 
-### 2. Other things I use
+### 3. Other things I use
 
 * [Waka Time to track programming time](https://wakatime.com/)
 * [z - used for jumping to files more quickly](https://github.com/rupa/z) - should be installed via omf config as plugin
-* [trash - moves things to trash from command line](http://hasseg.org/trash/)
+* [trash](http://hasseg.org/trash/) `brew install trash`
 * tree - `brew install tree`
 * silver searcher - `brew install the_silver_searcher`
 * ack - `brew install ack`
