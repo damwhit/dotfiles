@@ -43,3 +43,4 @@ Install omf [oh my fish](https://github.com/oh-my-fish/oh-my-fish)
 * silver searcher - `brew install the_silver_searcher`
 * ack - `brew install ack`
 * yarn - `brew install yarn`
+* macvim - `brew install macvim`
