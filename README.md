@@ -42,3 +42,4 @@ Install omf [oh my fish](https://github.com/oh-my-fish/oh-my-fish)
 * tree - `brew install tree`
 * silver searcher - `brew install the_silver_searcher`
 * ack - `brew install ack`
+* yarn - `brew install yarn`
