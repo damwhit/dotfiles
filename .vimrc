@@ -1,18 +1,19 @@
 call plug#begin('~/.vim/plugged')
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'scrooloose/nerdtree'
+Plug 'mileszs/ack.vim'
 Plug 'tomtom/tcomment_vim'
+Plug 'vim-airline/vim-airline'
 Plug 'wakatime/vim-wakatime'
 Plug 'terryma/vim-multiple-cursors'
-Plug 'rafi/awesome-vim-colorschemes'
 Plug 'mattn/emmet-vim'
-Plug 'leafgarland/typescript-vim'
-Plug 'mileszs/ack.vim'
-Plug 'mattn/webapi-vim'
-Plug 'vim-airline/vim-airline'
+Plug 'mattn/webapi-vim' 
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
+Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
+Plug 'BarretRen/vim-colorscheme'
+Plug 'wmvanvliet/vim-blackboard'
 call plug#end()
 
 filetype plugin indent on
@@ -32,7 +33,8 @@ let g:jsx_ext_required = 0
 
 " colorschemes
 set termguicolors " for solarized only
-colorscheme solarized8
+" colorscheme PaperColor " great - used during 1808 and 1810
+colorscheme blackboard
 
 " nerdtree
 map <C-\> :NERDTreeToggle<CR>
@@ -60,8 +62,8 @@ let g:user_emmet_leader_key = '<c-s>'
 let g:user_emmet_settings = webapi#json#decode(join(readfile(expand('~/dotfiles/.vim/snippets.json')), "\n"))
 
 " fonts
-set guifont=Inconsolata\ for\ Powerline:h15
-let g:Powerline_symbols = 'fancy'
+set macligatures
+set guifont=Fira\ Code:h14
 set encoding=utf-8
 set t_Co=256
 set fillchars+=stl:\ ,stlnc:\
@@ -69,7 +71,7 @@ set termencoding=utf-8
 if has("gui_running")
   let s:uname = system("uname")
   if s:uname == "Darwin\n"
-    set guifont=Inconsolata\ for\ Powerline:h15
+    set guifont=Fira\ Code:h14
   endif
 endif
 

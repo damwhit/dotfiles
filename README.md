@@ -22,3 +22,11 @@ ln -s ~/dotfiles/.pryrc ~/.pryrc
 * silver searcher - `brew install the_silver_searcher`
 * ack - `brew install ack`
 
+### 3. Fonts
+
+* Used powerline with fancy at some point
+* FiraCode:
+```
+brew tap caskroom/fonts
+brew cask install font-fira-code
+```  
