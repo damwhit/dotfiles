@@ -62,7 +62,6 @@ let g:user_emmet_leader_key = '<c-s>'
 let g:user_emmet_settings = webapi#json#decode(join(readfile(expand('~/dotfiles/.vim/snippets.json')), "\n"))
 
 " fonts
-set macligatures
 set guifont=Fira\ Code:h14
 set encoding=utf-8
 set t_Co=256
@@ -71,6 +70,7 @@ set termencoding=utf-8
 if has("gui_running")
   let s:uname = system("uname")
   if s:uname == "Darwin\n"
+    set macligatures
     set guifont=Fira\ Code:h14
   endif
 endif
