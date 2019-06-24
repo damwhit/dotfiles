@@ -26,22 +26,22 @@ class Cohort
   end
 end
 
-cohort_1808 = [
-  "Ashley Levi",
-  "Ashton Bailey",
-  "Cole Vanacore",
-  "Cody Price",
-  "Derek Hanciles",
-  "Jake Lauer",
-  "Jamie Rushford",
-  "Joel Smith",
+cohort_1811 = [
+  "David Cisneros",
+  "Elizabeth Asbell",
+  "Edgar Eloy Munoz",
+  "Eric Fitzsimons",
+  "Gabriel Inzurriaga",
+  "Isaac Sunoo",
+  "Jacob Admire",
+  "Jessica Hansen",
   "Justin Torrance",
-  "Kaylee Bunce",
-  "Kylie Stanley",
-  "Loryn Mason",
-  "Mike Duke",
-  "Sarah Ebbers",
-  "Tanj McMeans",
+  "Kimberly Myers",
+  "Mason France",
+  "Michael Krog",
+  "Taylor Sperry",
+  "Tom Wilhoit",
 ]
 
-s = Cohort.new(cohort_1808)
+
+s = Cohort.new(cohort_1811)
