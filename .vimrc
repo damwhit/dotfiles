@@ -4,7 +4,6 @@ Plug 'scrooloose/nerdtree'
 Plug 'mileszs/ack.vim'
 Plug 'tomtom/tcomment_vim'
 Plug 'vim-airline/vim-airline'
-Plug 'wakatime/vim-wakatime'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'mattn/emmet-vim'
 Plug 'mattn/webapi-vim' 
@@ -13,7 +12,6 @@ Plug 'mxw/vim-jsx'
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
 Plug 'BarretRen/vim-colorscheme'
-Plug 'wmvanvliet/vim-blackboard'
 call plug#end()
 
 filetype plugin indent on
@@ -33,8 +31,7 @@ let g:jsx_ext_required = 0
 
 " colorschemes
 set termguicolors " for solarized only
-" colorscheme PaperColor " great - used during 1808 and 1810
-colorscheme blackboard
+colorscheme PaperColor " great - used during 1808 and 1810
 
 " nerdtree
 map <C-\> :NERDTreeToggle<CR>
