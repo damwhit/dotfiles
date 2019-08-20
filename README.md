@@ -54,7 +54,6 @@ brew install tree
 brew install the_silver_searcher
 brew install ack
 brew install yarn
-brew install vim
 brew install macvim
 ```
 
