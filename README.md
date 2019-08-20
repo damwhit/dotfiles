@@ -57,7 +57,14 @@ brew install yarn
 brew install macvim
 ```
 
-### 6. Fancy fonts
+### 6. Install vimplug
+
+```sh
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
+
+### 7. Fancy fonts
 
 * Used powerline with fancy at some point
 * FiraCode:
