@@ -36,7 +36,6 @@ Install omf [oh my fish](https://github.com/oh-my-fish/oh-my-fish)
 
 ### 3. Other things I use
 
-* [Waka Time to track programming time](https://wakatime.com/)
 * [z - used for jumping to files more quickly](https://github.com/rupa/z) - should be installed via omf config as plugin
 * [trash](http://hasseg.org/trash/) `brew install trash`
 * tree - `brew install tree`
@@ -45,7 +44,7 @@ Install omf [oh my fish](https://github.com/oh-my-fish/oh-my-fish)
 * yarn - `brew install yarn`
 * macvim - `brew install macvim`
 
-### 3. Fonts
+### 3. Fancy fonts
 
 * Used powerline with fancy at some point
 * FiraCode:
