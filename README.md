@@ -44,23 +44,26 @@ Install omf [oh my fish](https://github.com/oh-my-fish/oh-my-fish)
 * https://github.com/turingschool-examples/frontend-module-0-capstone#environment
 
 
-### 5. Other things I use
+### 5. Other useful tools and integrations
 
-* [z - used for jumping to files more quickly](https://github.com/rupa/z) - `omf install z`
-* rbenv omf autoload - `omf install rbenv`
-* [trash](http://hasseg.org/trash/) `brew install trash`
-* tree - `brew install tree`
-* silver searcher - `brew install the_silver_searcher`
-* ack - `brew install ack`
-* yarn - `brew install yarn`
-* newest vim version - `brew install vim`
-* macvim - `brew install macvim`
+```sh
+omf install z
+omf install rbenv
+brew install trash
+brew install tree
+brew install the_silver_searcher
+brew install ack
+brew install yarn
+brew install vim
+brew install macvim
+```
 
 ### 6. Fancy fonts
 
 * Used powerline with fancy at some point
 * FiraCode:
-```
+
+```sh
 brew tap caskroom/fonts
 brew cask install font-fira-code
 ```  
