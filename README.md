@@ -13,10 +13,11 @@ ln -s ~/dotfiles/.vim ~/.vim
 ln -s ~/dotfiles/.pryrc ~/.pryrc
 ```
 
-### 1. Install xcode command line tools, brew, etc
-  * 1. http://mod0.turing.io/setup-instructions
+### 2. Install xcode command line tools, brew, etc
+
+* http://mod0.turing.io/setup-instructions
   
-### 1. fish shell installation
+### 3. fish shell installation
 Download fish shell
 
 ```sh
@@ -37,12 +38,13 @@ chsh -s /usr/local/bin/fish
 
 Install omf [oh my fish](https://github.com/oh-my-fish/oh-my-fish)
 
-### 1. Install rbenv and node
-  * 1. https://github.com/turingschool-examples/backend_module_0_capstone#environment
-  * 1. https://github.com/turingschool-examples/frontend-module-0-capstone#environment
+### 4. Install rbenv and node
+
+* https://github.com/turingschool-examples/backend_module_0_capstone#environment
+* https://github.com/turingschool-examples/frontend-module-0-capstone#environment
 
 
-### 1. Other things I use
+### 5. Other things I use
 
 * [z - used for jumping to files more quickly](https://github.com/rupa/z) - `omf install z`
 * rbenv omf autoload - `omf install rbenv`
@@ -53,7 +55,7 @@ Install omf [oh my fish](https://github.com/oh-my-fish/oh-my-fish)
 * yarn - `brew install yarn`
 * macvim - `brew install macvim`
 
-### 1. Fancy fonts
+### 6. Fancy fonts
 
 * Used powerline with fancy at some point
 * FiraCode:
