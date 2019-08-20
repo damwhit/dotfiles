@@ -53,6 +53,7 @@ Install omf [oh my fish](https://github.com/oh-my-fish/oh-my-fish)
 * silver searcher - `brew install the_silver_searcher`
 * ack - `brew install ack`
 * yarn - `brew install yarn`
+* newest vim version - `brew install vim`
 * macvim - `brew install macvim`
 
 ### 6. Fancy fonts
