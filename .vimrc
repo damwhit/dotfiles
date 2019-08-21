@@ -31,6 +31,8 @@ let g:jsx_ext_required = 0
 
 " colorschemes
 set termguicolors " for solarized only
+set background=light    " Light theme is used by default 
+set t_Co=256 
 colorscheme PaperColor " great - used during 1808 and 1810
 
 " nerdtree
