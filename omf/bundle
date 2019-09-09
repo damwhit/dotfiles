@@ -3,5 +3,7 @@ package rbenv
 package z
 theme clearance
 theme default
+theme fishface
+theme kawasaki
 theme lambda
 theme redfish

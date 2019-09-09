@@ -6,7 +6,7 @@ Plug 'tomtom/tcomment_vim'
 Plug 'vim-airline/vim-airline'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'mattn/emmet-vim'
-Plug 'mattn/webapi-vim' 
+Plug 'mattn/webapi-vim'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'leafgarland/typescript-vim'
@@ -25,14 +25,15 @@ syntax on
 set hlsearch
 set noeb vb t_vb=
 set backspace=indent,eol,start
- 
+:let g:netrw_dirhistmax = 0 " don't want to generate netrwhist file
+
 " vim-jsx
 let g:jsx_ext_required = 0
 
 " colorschemes
 set termguicolors " for solarized only
-set background=light    " Light theme is used by default 
-set t_Co=256 
+set background=light    " Light theme is used by default
+set t_Co=256
 colorscheme PaperColor " great - used during 1808 and 1810
 
 " nerdtree
@@ -49,7 +50,7 @@ let g:ctrlp_use_caching = 0
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif
-map <C-f> :Ack!<Space> 
+map <C-f> :Ack!<Space>
 
 " backup directories
 set backup
@@ -61,16 +62,16 @@ let g:user_emmet_leader_key = '<c-s>'
 let g:user_emmet_settings = webapi#json#decode(join(readfile(expand('~/dotfiles/.vim/snippets.json')), "\n"))
 
 " fonts
-set guifont=Fira\ Code:h14
+" set guifont=Fira\ Code:h14
+set guifont=Monaco:h20
+set guifont=Monospace:h20
 set encoding=utf-8
-set t_Co=256
 set fillchars+=stl:\ ,stlnc:\
 set termencoding=utf-8
-if has("gui_running")
-  let s:uname = system("uname")
-  if s:uname == "Darwin\n"
-    set macligatures
-    set guifont=Fira\ Code:h14
-  endif
-endif
-
+" if has("gui_running")
+"   let s:uname = system("uname")
+"   if s:uname == "Darwin\n"
+"     set macligatures
+"     set guifont=Fira\ Code:h14
+"   endif
+" endif

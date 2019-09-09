@@ -3,7 +3,7 @@ dotfiles
 
 ## Setup Notes
 
-### 1. Symlinks
+### Symlinks
 
 ```
 ln -s ~/dotfiles/omf ~/.config/omf
@@ -13,11 +13,11 @@ ln -s ~/dotfiles/.vim ~/.vim
 ln -s ~/dotfiles/.pryrc ~/.pryrc
 ```
 
-### 2. Install xcode command line tools, brew, etc
+### Install xcode command line tools, brew, etc
 
 * http://mod0.turing.io/setup-instructions
-  
-### 3. fish shell installation
+
+### fish shell installation
 Download fish shell
 
 ```sh
@@ -38,13 +38,13 @@ chsh -s /usr/local/bin/fish
 
 Install omf [oh my fish](https://github.com/oh-my-fish/oh-my-fish)
 
-### 4. Install rbenv and node
+### Install rbenv and node
 
 * https://github.com/turingschool-examples/backend_module_0_capstone#environment
 * https://github.com/turingschool-examples/frontend-module-0-capstone#environment
 
 
-### 5. Other useful tools and integrations
+### Other useful tools and integrations
 
 ```sh
 omf install z
@@ -57,14 +57,14 @@ brew install yarn
 brew install macvim
 ```
 
-### 6. Install vimplug
+### Install vimplug
 
 ```sh
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
-### 7. Fancy fonts
+### Fancy fonts
 
 * Used powerline with fancy at some point
 * FiraCode:
