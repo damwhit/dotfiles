@@ -11,6 +11,7 @@ ln -s ~/dotfiles/.gitconfig ~/.gitconfig
 ln -s ~/dotfiles/.vimrc ~/.vimrc
 ln -s ~/dotfiles/.vim ~/.vim
 ln -s ~/dotfiles/.pryrc ~/.pryrc
+ln -s ~/dotfiles/.emacs.d ~/.emacs.d
 ```
 
 ### Install xcode command line tools, brew, etc
