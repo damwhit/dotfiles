@@ -3,6 +3,7 @@
 .emacs.d/elpa
 .emacs.d/init.el~
 .emacs.d/places
+.emacs.d/transient
 .atom/packages
 .vim/autoload
 .vim/plugged

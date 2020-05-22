@@ -5,3 +5,5 @@ abbr -a -g pjs prettier --write "src/**/*.js"
 function em
    command emacs $argv &
 end
+
+abbr -a -g org em ~/org-docs
