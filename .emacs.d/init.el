@@ -17,13 +17,18 @@
                      powerline
                      helm
                      helm-projectile
-                     helm-ag))                    
+                     helm-ag
+                     ruby-electric
+                     seeing-is-believing
+                     rbenv
+                     ruby-test-mode))                    
 
 ; install the missing packages
 (dolist (package package-list)
   (unless (package-installed-p package)
     (package-install package)))
 
+; defaults and appearance
 (require 'better-defaults)
 
 (setq inhibit-splash-screen t
@@ -60,6 +65,30 @@
 
 ; language specific
 (setq js-indent-level 2)
+
+
+(add-hook 'ruby-mode-hook 'ruby-electric-mode)
+(global-rbenv-mode)
+(rbenv-use-global)
+
+(add-to-list 'auto-mode-alist
+             '("\\.\\(?:cap\\|gemspec\\|irbrc\\|gemrc\\|rake\\|rb\\|ru\\|thor\\)\\'" . ruby-mode))
+(add-to-list 'auto-mode-alist
+             '("\\(?:Brewfile\\|Capfile\\|Gemfile\\(?:\\.[a-zA-Z0-9._-]+\\)?\\|[rR]akefile\\)\\'" . ruby-mode))
+
+(setq seeing-is-believing-prefix "C-l")
+(add-hook 'ruby-mode-hook 'seeing-is-believing)
+(require 'seeing-is-believing)
+
+(require 'ruby-test-mode)
+(add-hook 'ruby-mode-hook 'ruby-test-mode)
+(add-hook 'compilation-finish-functions
+          (lambda (buf strg)
+            (switch-to-buffer-other-window "*compilation*")
+            (read-only-mode)
+            (goto-char (point-max))
+            (local-set-key (kbd "q")
+                           (lambda () (interactive) (quit-restore-window)))))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
