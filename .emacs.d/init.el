@@ -21,6 +21,7 @@
                      ruby-electric
                      seeing-is-believing
                      rbenv
+                     inf-ruby
                      ruby-test-mode))                    
 
 ; install the missing packages
@@ -82,6 +83,9 @@
 (add-hook 'ruby-mode-hook 'seeing-is-believing)
 (require 'seeing-is-believing)
 
+(autoload 'inf-ruby-minor-mode "inf-ruby" "Run an inferior Ruby process" t)
+(add-hook 'ruby-mode-hook 'inf-ruby-minor-mode)
+
 (require 'ruby-test-mode)
 (add-hook 'ruby-mode-hook 'ruby-test-mode)
 (add-hook 'compilation-finish-functions
@@ -97,7 +101,9 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages (quote (magit solarized-theme evil better-defaults))))
+ '(package-selected-packages
+   (quote
+    (inf-ruby magit solarized-theme evil better-defaults))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
