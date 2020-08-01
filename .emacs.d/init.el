@@ -37,6 +37,8 @@
 
 (load-theme 'afternoon t)
 
+(setq make-backup-files nil)
+
 (require 'evil)
 (evil-mode 1)
 
