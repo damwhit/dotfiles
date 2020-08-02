@@ -18,6 +18,8 @@
                      helm
                      helm-projectile
                      helm-ag
+                     all-the-icons
+                     neotree
                      ruby-electric
                      seeing-is-believing
                      rbenv
@@ -60,6 +62,19 @@
 (setq-default indent-tabs-mode nil)
 (setq indent-line-function 'insert-tab)
 
+; neotree
+(require 'neotree)
+(global-set-key (kbd "C-\\") 'neotree-toggle)
+(setq neo-theme (if (display-graphic-p) 'icons 'arrow))
+(require 'all-the-icons)
+(add-hook 'neotree-mode-hook
+          (lambda ()
+            (define-key evil-normal-state-local-map (kbd "TAB") 'neotree-enter)
+            (define-key evil-normal-state-local-map (kbd "SPC") 'neotree-enter)
+            (define-key evil-normal-state-local-map (kbd "q") 'neotree-hide)
+            (define-key evil-normal-state-local-map (kbd "RET") 'neotree-enter)))
+
+; org mode
 (require 'org)
 (setq org-todo-keywords
   '((sequence "TODO" "IN-PROGRESS" "WAITING" "DONE")))
