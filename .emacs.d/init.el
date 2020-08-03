@@ -40,7 +40,10 @@
 
 (load-theme 'afternoon t)
 
-(setq make-backup-files nil)
+; put backups and temp files in other dirs
+(setq backup-directory-alist `(("." . "~/.saves")))
+(setq auto-save-file-name-transforms
+          `((".*" ,temporary-file-directory t)))
 
 (require 'evil)
 (evil-mode 1)
