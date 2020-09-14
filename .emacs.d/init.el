@@ -24,6 +24,7 @@
                      seeing-is-believing
                      rbenv
                      inf-ruby
+                     haml-mode
                      ruby-test-mode))                    
 
 ; install the missing packages
@@ -47,6 +48,7 @@
 
 (require 'evil)
 (evil-mode 1)
+(evil-commentary-mode)
 
 (global-set-key (kbd "M-x") #'helm-M-x)
 (global-set-key (kbd "s-f") #'helm-projectile-ag)
@@ -121,7 +123,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (inf-ruby magit solarized-theme evil better-defaults))))
+    (evil-commentary markdown-mode inf-ruby magit solarized-theme evil better-defaults))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
