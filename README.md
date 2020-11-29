@@ -5,7 +5,7 @@ dotfiles
 
 ### Computer setup checklist
 
-* [ ] install chrome
+* [ ] install chrome and slack
 * [ ] install alfred, caffeine, and rectangle
 * [ ] change trackpad and keyboard setups
 * [ ] install text editors
