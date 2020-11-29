@@ -3,6 +3,14 @@ dotfiles
 
 ## Setup Notes
 
+### Computer setup checklist
+
+* [ ] install chrome
+* [ ] install alfred
+* [ ] change trackpad and keyboard setups
+* [ ] install text editors
+* [ ] port over what's needed from external hd
+
 ### Symlinks
 
 ```
