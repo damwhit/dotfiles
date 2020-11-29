@@ -6,7 +6,7 @@ dotfiles
 ### Computer setup checklist
 
 * [ ] install chrome
-* [ ] install alfred
+* [ ] install alfred, caffeine, and rectangle
 * [ ] change trackpad and keyboard setups
 * [ ] install text editors
 * [ ] port over what's needed from external hd
