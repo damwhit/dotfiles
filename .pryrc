@@ -26,22 +26,36 @@ class Cohort
   end
 end
 
-cohort_1811 = [
-  "David Cisneros",
-  "Elizabeth Asbell",
-  "Edgar Eloy Munoz",
-  "Eric Fitzsimons",
-  "Gabriel Inzurriaga",
-  "Isaac Sunoo",
-  "Jacob Admire",
-  "Jessica Hansen",
-  "Justin Torrance",
-  "Kimberly Myers",
-  "Mason France",
-  "Michael Krog",
-  "Taylor Sperry",
-  "Tom Wilhoit",
+cohort_2010 = [
+  'Alia Peterson',
+  'Allison Dietz',
+  'Alice Ruppert',
+  'Ben Prat',
+  'Boone Epstein',
+  'Brian Forbes',
+  'Cameron Aragon',
+  'Chris Spohn',
+  'Christina Cook',
+  'Connie Hong',
+  'Cole Fiscus',
+  'Drew Bradley',
+  'Elsa Fluss',
+  'Eric Campbell',
+  'Gabrielle Joyce',
+  'Jeff Kersting',
+  'Kelly Dinneen',
+  'Kelsie Besinger',
+  'Kevin Hartmann',
+  'Kristen Bair',
+  'Lucas Merchant',
+  'Luke Mason',
+  'Matthew Dean',
+  'Max Bregman',
+  'Rachel Buchta',
+  'Richard Tyler',
+  'Tashia Davis',
+  'Thao Ma',
 ]
 
 
-s = Cohort.new(cohort_1811)
+s = Cohort.new(cohort_2010)
